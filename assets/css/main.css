@@ -277,7 +277,8 @@
 }
 
 #business .row.clearfix [class*="col_"],
-#around-world .row.clearfix [class*="col_6"]
+#around-world .row.clearfix [class*="col_6"],
+footer .row.clearfix [class*="col_6"]
 {
  float: left;
 }
@@ -332,7 +333,8 @@ footer .my_col_6 {
   width: 25%;
   }
 
- #around-world .row.clearfix [class*="col_6"]{
+ #around-world .row.clearfix [class*="col_6"]
+ {
   width: 50%;
  }
 
@@ -385,8 +387,7 @@ footer .my_col_6 {
 
 #development_teams > .dev_teams {
  background-color: white;
- padding-top: 35px;
- padding-bottom: 50px;
+ padding: 35px 35px 50px 35px;
  margin-top: 70px;
 }
 
@@ -439,14 +440,74 @@ footer {
  padding-bottom: 96px;
 }
 
+footer .container-fluid:first-child {
+ border-bottom: 1px solid;
+ width: 98%;
+}
+
 footer .row{
  margin: 0 auto;
+ padding-bottom: 35px;
+ width: 100%
 }
 
 footer ul li {
  list-style-type: none;
+ line-height: 30px;
 }
 
 footer ul li h6{
  margin-bottom: 10px;
+}
+
+footer ul li a {
+ color: hsla(0,0%,100%,.5);
+ text-decoration: none!important;
+}
+
+footer ul li a:hover {
+ color: white;
+}
+
+footer .container-fluid:last-child{
+ width: 100%;
+}
+
+.copy {
+ float: left;
+ margin-left: 10px;
+ margin-top: 30px;
+}
+
+.copy p {
+ color: hsla(0,0%,100%,.5);
+ display: inline-block;
+ position: relative;
+ margin: 14px 0px 14px 10px ;
+ vertical-align: text-bottom;
+}
+
+.social {
+ float: right;
+ margin-top: 32px;
+}
+
+.social ul li{
+ list-style-type: none;
+ float: left;
+ margin-left: 16px;
+ margin-top: 16px;
+}
+
+.social ul li a {
+ hsla(0,0%,100%,.5);
+}
+
+.social ul li a svg {
+ fill: currentColor;
+}
+
+.right {
+ float: right;
+ margin-right: 40px;
 }
